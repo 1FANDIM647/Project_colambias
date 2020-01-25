@@ -278,7 +278,8 @@ int main ()
        
    */
 
-
+    system("chcp1251>nul");
+ 
   /*OBJECTS*/
 
   /*****object_door *****/
