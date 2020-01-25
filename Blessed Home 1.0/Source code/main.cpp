@@ -119,7 +119,7 @@ public :
             bool water_hot = false;
             int close_crane ();
         }
-        return bool trigger_in_crane_of_hot_water;
+        return  trigger_in_crane_of_hot_water;
   }
 
     bool turn_on_cold_water_in_home(bool trigger_in_crane_of_cold_water) {
@@ -139,7 +139,7 @@ public :
             bool water_hot = false;
             int close_crane();
         }
-        return bool trigger_in_crane_of_cold_water;
+        return  trigger_in_crane_of_cold_water;
     }
 
     // function for labels  " on/off hot water " and "on/off cold water"
@@ -147,16 +147,28 @@ public :
     bool slide_water(bool tap_on_button_H , bool tap_on_button_C) {
         if (tap_on_button_H = true) {
             bool turn_on_hot_water_in_home();
+            return true;
          }
+        else {
+            return false;
+        }
         if (tap_on_button_C = true) {
             bool turn_on_cold_water_in_home();
+            return true;
+        }
+        else {
+            return false;
         }
         if (tap_on_button_C&& tap_on_button_H = true)
         {
             int close_crane();
+            return true; 
         }
-     
-        return bool tap_on_button_H, bool tap_on_screen_C 
+        else {
+            return false;
+        }
+        
+      
      }
 
 };
@@ -198,14 +210,16 @@ public :
             }
         }
 
-        return  trigger_in_curtains;
+        return trigger_in_curtains; 
     }
 
+   
 };
 
 class conditioner() {
 public:
     int work_conditioner() {
+        int temperature_in_C; // for measuring of temperature in C graduses 
         int temperature_of_conditioner;
         bool trigger_in_conditioner;
         bool press_on_screen_conditioner;
@@ -235,9 +249,21 @@ public:
                         };
                     } while (trigger = false)
             }
-            return bool trigger_in_conditioner, bool press_on_screen_condtioner, bool temperature_of_conditioner
+            return  trigger_in_conditioner,  press_on_screen_condtioner,   temperature_of_conditioner;
         }
-        return int value_of_conditioner;
+        return  value_of_conditioner;
+
+    }
+
+    /*Function  for measuring of the temperature    */
+    int  measure_of_temperature(int temperature_in_C )
+    {
+        int temperature_in_F;
+        temperature_in_F =9/5*temperature_in_C+32;
+        
+        cout<<"Температура в F :"<<temperature_in_F <<endl;
+        
+        return 0;
 
     }
 };
@@ -256,40 +282,41 @@ int main ()
   /*OBJECTS*/
 
   /*****object_door *****/
-  main_door_in_flat.door_first;
+  main_door_in_flat door_first;
   // door_first is getting two function
   door_first.name_of_door = "Главная дверь";
-  door_first.bool opening_door();
-  door_first.bool closing_door ();
+  door_first.opening_door();
+  door_first. closing_door ();
   /*****light *****/
   //room1
-  light_in_rooms.room1;
+  light_in_rooms room1;
   room1.name_of_room = "комната1"
-      room1.bool turning_on_and_turning_off_light();
+      room1. turning_on_and_turning_off_light();
   //room2
-  light_in_rooms.room2;
+  light_in_rooms room2;
   room2.name_of_room = "комната2";
-      room2.bool turning_on_and_turning_off_light();
+      room2. turning_on_and_turning_off_light();
   //room3
-  light_in_rooms.room3;
+  light_in_rooms room3;
   room3.name_of_room = "комната3";
-      room3.bool turning_on_and_turning_off_light();
+      room3. turning_on_and_turning_off_light();
   //room4
-  light_in_rooms.room4;
+  light_in_rooms room4;
   room4.name_of_room = "комната4";
-      room4.bool turning_on_and_turning_off_light();
+      room4. turning_on_and_turning_off_light();
 
  /*****conditioner *****/ 
-      conditioner.Conditioner;
+      conditioner Conditioner;
       Conditioner.work_conditioner();
  /*****water*****/
-      water_device.crane;
+      water_device crane;
       crane.slide_water();
+      crane.measure_of_temperature();
 /*****curtains*****/
-      main_door_in_flat.door_first;
+      main_door_in_flat door_first;
       // door_first is getting two function
       door_first.name_of_door = "Шторы";
-      door_first.bool opening_curtians();
-      door_first.bool closing_curtians();
+      door_first. opening_curtians();
+      door_first. closing_curtians();
   return 0;
   }
