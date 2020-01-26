@@ -6,9 +6,12 @@
 #include<iostream>
 #include<SFML>
 #include<string>
-#include<microcontroler>
+#include<microcontroler>// include library for work with microcontroler 
 #include<ctime>
 /*include  tools for controle smart room  */
+/*include "v8 " for work with JavaScript   */
+#include <include\v8.h>
+#include <include\libplatform\libplatform.h>
 
 using namespace std;
 
@@ -32,7 +35,7 @@ public:
             int open_locker();
             // from library  microcontroler 
         }
-        return trigger_in_door;
+        return true;
     }
     bool closing_door(bool trigger_in_door)
     {
@@ -49,7 +52,7 @@ public:
             }
         }
 
-        return  trigger_in_door;
+        return  false ;
     }
 };
 /*****light *****/
@@ -85,7 +88,7 @@ public:
             } while (trigger_in_room = false);
 
         }
-        return  trigger_in_room;
+        return  true;
 
     }
 };
@@ -119,7 +122,7 @@ public :
             bool water_hot = false;
             int close_crane ();
         }
-        return  trigger_in_crane_of_hot_water;
+        return  true;
   }
 
     bool turn_on_cold_water_in_home(bool trigger_in_crane_of_cold_water) {
@@ -139,7 +142,7 @@ public :
             bool water_hot = false;
             int close_crane();
         }
-        return  trigger_in_crane_of_cold_water;
+        return  true;
     }
 
     // function for labels  " on/off hot water " and "on/off cold water"
@@ -193,7 +196,7 @@ public :
             int open_locker();
             // from library  microcontroler 
         }
-        return trigger_in_curtains;
+        return true;
     }
     bool closing_curtains(bool trigger_in_door)
     {
@@ -210,7 +213,7 @@ public :
             }
         }
 
-        return trigger_in_curtains; 
+        return false ; 
     }
 
    
