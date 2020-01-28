@@ -14,11 +14,37 @@
 
    
 </header>
+
 <center>
 <div id="sac"> 
-<img src="rew2.png">
+<img src="rew3.png">
 </div>	
 </center> 
+
+//всплывающие окно 
+<div class='hover_body' id='hover' onclick='popUpHide()'></div>
+  <button onclick="popUp()" id='button'><big><h1>VERSION</h1> </big></button><a href='' id='f' onclick='hello()'>hello</a>
+  <div class='popup' id='popup'>
+    <div class='header'> <center>  <p1><h1 href='#'onclick='popUpHide()'><big><h1>  
+     Текущая версия Blessed Home: 1.0.0<br> <h1>Developed by "Blessedsoft company"  </h1> </h1> </big > </h1></p1 > </center> </div>
+    <div class='body'></div>
+    <div class='footer'></div>
+    <script type="text/javascript">
+      function popUp(){
+      document.getElementById('popup').className = 'popup--active';
+      document.getElementById('hover').className = 'hover_body--active';
+        document.getElementById('button').className = 'button--active';
+  }
+  function popUpHide(){
+    if(document.getElementById('popup').classList.contains("popup--active")){
+      document.getElementById('popup').className = 'popup';
+      document.getElementById('hover').className = 'hover_body';
+        document.getElementById('button').className = '';
+    }
+  }
+    </script>
+  </div>
+
 
 <div class="menu">
   <nav class="menu__nav">
@@ -38,11 +64,11 @@
     </ul>
   </nav>
   <div class="menu__toggle">
-    <button class="r-button menu__hamburger">
+    <button1 class="r-button menu__hamburger">
       <span class="m-hamburger">
         <span class="m-hamburger__label">Open menu</span>
       </span>
-    </button>
+    </button1>
   </div>  
 </div>
 

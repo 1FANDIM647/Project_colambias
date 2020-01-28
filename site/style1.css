@@ -1,7 +1,7 @@
 
 
 body{ 
-  background-color: purple;
+  background-color: grey;
   overflow: scroll;
 
 }
@@ -41,7 +41,17 @@ position: center;
 
 
 }
-.button {
+#soc2{
+	top :140%;
+
+	right: 25% ;
+	position: absolute;
+position: center;
+	display: 100%;
+
+
+}
+.button1 {
 	margin: 100px;
 
 }
@@ -54,6 +64,14 @@ position: center;
 	padding: 10px 30px;
 	color : white;
 	top :640px;
+}
+#sac{
+	top :31%;
+left :1300px;
+position: absolute;
+position: center;
+	display: 100%;
+
 }
 
 header {
@@ -465,3 +483,73 @@ LinkedIn
 .linkedin__link{
   color: #ff5c5c;
 }
+
+
+// всплывающие окно.
+a{
+    color: white;
+  text-decoration: none;
+  }
+  button{
+    position: absolute;
+    left:12px;
+    top:30%;
+    width: 500px;
+    height: 150px;
+  }
+  
+  .popup{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: red;
+    left:20%;
+    top:1%;
+    z-index:6;
+    transition:1s;
+    transform: translateY(-105%);
+  }
+  .hover_body{
+    position: absolute;
+    background:#a0a0a0;
+    width:100vw;
+    height:100vh;
+    z-index:0;
+    opacity: 0;
+  }
+  .header a{
+      position:relative;
+      top :25%;
+   
+        right: 10px;
+  }
+  .header{
+    position: relative;
+    width:100%;
+    text-align: right;
+    top: 25%;
+  }
+  .popup--active{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: red;
+    left:20%;
+    top:1%;
+    z-index: 6;
+    transition: 1s;
+  }
+  .hover_body--active{
+    position: absolute;
+    background:#a0a0a0;
+    width:100vw;
+    height:100vh;
+    z-index:0;
+    opacity: 0.5;
+  }
+  .button--active{
+    opacity: 0.5; 
+  }
+  .coss {
+    top :30%;
+  }
