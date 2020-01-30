@@ -22,8 +22,8 @@ body{
 }
 
 #soc{
-	top :40%;
-	right :25%;
+	top :95%;
+	right :20%;
 	position: absolute;
  
 
@@ -31,10 +31,17 @@ body{
   
 }
 
-#soc1{
-	top :90%;
+#soc4{
+  right: 30%;
+  top :25%;
+  position: absolute;
+  position: center;
+}
 
-	right: 25% ;
+#soc1{
+	top :45%;
+
+	right: 20% ;
 	position: absolute;
 position: center;
 	display: 100%;
@@ -44,7 +51,7 @@ position: center;
 #soc2{
 	top :140%;
 
-	right: 25% ;
+	right: 20% ;
 	position: absolute;
 position: center;
 	display: 100%;
@@ -53,7 +60,18 @@ position: center;
 }
 .button1 {
 	margin: 100px;
+ 
 
+}
+
+.button1 a{
+  text-decoration : none;
+  font-size :40px;
+  font-family: monospace;
+  background-color: red;
+  padding: 20px 30px;
+  color : white;
+  top :10px;
 }
 
 .button a{
@@ -61,9 +79,9 @@ position: center;
 	font-size :40px;
 	font-family: monospace;
 	background-color: red;
-	padding: 10px 30px;
+	padding: 20px 30px;
 	color : white;
-	top :640px;
+	top :30%;
 }
 #sac{
 	top :31%;
@@ -84,12 +102,12 @@ text-align: center;
  
 }
 footer {
-  width: 100%;
+  width: 100%
   display :100%;
   height: 200px;
   background-color: black;
   font-family: Arial; 
-}
+  
 
 position: relative;
   text-indent: -9999px;
@@ -496,6 +514,7 @@ a{
     top:30%;
     width: 500px;
     height: 150px;
+
   }
   
   .popup{
@@ -553,3 +572,19 @@ a{
   .coss {
     top :30%;
   }
+#foc0{
+  top:40%;
+  right:  ;
+  position: absolute;
+position: center;
+  display: 100%;
+}
+#foc1{
+  top:%;
+  right: 20% ;
+  position: absolute;
+position: center;
+  display: 100%;
+
+}
+
