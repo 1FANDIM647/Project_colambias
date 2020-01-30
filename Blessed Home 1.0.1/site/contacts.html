@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+	<title>Blessed Home</title>
+
+   <link rel="shortcut icon" href="bh.png" type="image/png">
+  <meta charset="utf-8"/>
+	<link  rel="stylesheet"    href= "style1.css"  type="text/css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="soc4"> 
+
+	<img src="ima3.png">
+</div>
+
+
+
+	 <div  class="button">
+    
+  
+     
+    <a href="https://mail.yandex.ru/u2709/?uid=1015492366#compose">Email </a><br>
+     
+    
+   </div>	
+
+
+
+<div  class="button">
+    
+    <a href="">88000005644 </a>
+    
+   </div>
+
+<div class="menu">
+  <nav class="menu__nav">
+    <ul class="r-list menu__list">
+    	<center>
+      <li class="menu__group">
+      	<center>
+       <big><h1> <a href="index.html" class="r-link menu__link">Home</a></h1></big>
+      </li>
+      <li class="menu__group">
+       <big><h1>  <a href="contacts.html" class="r-link menu__link">Контакты</a></h1></big>
+      </li>
+      <li class="menu__group">
+       <big><h1>  <a href="rew.html" class="r-link menu__link">Обзор приложения </a></h1></big>
+      </li>
+      </center>
+    </ul>
+  </nav>
+  <div class="menu__toggle">
+    <button1 class="r-button menu__hamburger">
+      <span class="m-hamburger">
+        <span class="m-hamburger__label">Open menu</span>
+      </span>
+    </button1>
+  </div>  
+</div>
+
+  
+  <script type="text/javascript">
+
+    (function(){
+  'use strict';
+
+  class Menu {
+    constructor(settings) {
+      this.menuNode = settings.menuNode;
+    }
+    
+    toggleMenuState(className) {      
+      if (typeof className !== 'string' || className.length === 0) {
+        return console.log('you did not give the class for toggleState function');
+      } 
+      return  this.menuNode.classList.toggle(className);
+    }
+  }
+
+  const jsMenuNode = document.querySelector('.menu');
+  const demoMenu = new Menu ({
+    menuNode: jsMenuNode
+  });
+  
+  function callMenuToggle(event) {
+    demoMenu.toggleMenuState('menu_activated');
+  }
+  
+  jsMenuNode.querySelector('.menu__hamburger').addEventListener('click', callMenuToggle);
+})();
+
+
+  </script>
+
+<footer> 
+   
+       
+    </footer>
+</body>
