@@ -13,10 +13,16 @@
 #include <include\v8.h>
 #include <include\libplatform\libplatform.h>
 
+/*we need connect program "generate_cards" 
+for creating personal number ID of User .  */
+
+#include "generate_cards.cpp"
+
 /*connect main microcontroller*/
 #include <maincontroller.h>
 
 using namespace std;
+
 
 /*****door*****/
 class main_door_in_flat
