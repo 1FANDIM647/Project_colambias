@@ -1,0 +1,60 @@
+/*
+It's one of parts of ANALITICS SOFTWARE
+
+messsage about  memory your PC
+
+DEVELPOPED BY Shishov Michael
+email : fandim16k@gmail.com
+
+*/
+#include <analitics.>
+#include <stdlib.h>
+#include <math.h>
+#include "ANALITICS_OS.cpd"
+#include "GARBAGE COLLECTOR.h"
+#include <iostream>
+#include <window.h>
+#include <string.h>
+#include "proccessorx86.h"
+#include <stdlib.h>
+struct block_list {
+ char *txt;
+ int len;
+ int num;
+};
+
+
+static struct block_list *list;
+static int list_size;
+static int max_size;
+
+struct block_list *block_head;
+
+int read_block(char *buf, int buf_size, FILE *fin)
+{
+ char *curr = buf, *const buf_end = buf + buf_size;
+
+ while (buf_end - curr > 1 && fgets(curr, buf_end - curr, fin)) {
+   if (*curr == '\n') /* empty line */
+     return curr - buf;
+   curr += strlen(curr);
+ }
+
+ return -1; /* EOF or no space left in buf. */
+}
+
+using namespace std ;
+
+class manager_of_memory
+{
+
+float ALFA_MEMORY [2134513627358485] ={};
+
+
+}
+
+
+int int main(int argc, char const *argv[]) {
+
+  return 0;
+}

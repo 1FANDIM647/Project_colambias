@@ -1,0 +1,13 @@
+#include <iostream.h> ;
+using namespace std ;
+
+int main ( ) {
+
+  int number = 5;
+
+  int *b=&number;
+
+  std::cout << " Pointer is " << b <<endl;
+
+  return 0;
+}
