@@ -85,13 +85,20 @@ position: center;
 }
 #sac{
 	top :31%;
-left :1300px;
+left :1280px;
 position: absolute;
 position: center;
 	display: 100%;
 
 }
+#aaa{
+  top:145%;
+  left :1280px;
+  position: absolute;
+  position: center;
+  display: 100%;
 
+}
 header {
 width:100%;
 display: block;
