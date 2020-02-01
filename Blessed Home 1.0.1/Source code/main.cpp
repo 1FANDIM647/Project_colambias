@@ -4,6 +4,7 @@
   Email : fandim16k@gmail.com
  */
 #include<iostream>
+#include <cstdlib>
 #include<SFML>
 #include<string>
 #include<microcontroler>// include library for work with microcontroler 
@@ -25,6 +26,33 @@ for creating personal number ID of User .  */
 #include "bluetooth.cpp"
 
 using namespace std;
+
+
+
+
+/*****USER*****/
+
+class USER {
+public:   
+    // name of user 
+     string name;
+     int ID_code;
+     
+    int generate_of_numbers ();     
+   // function to get phone number 
+
+   int  get_for_number (){
+    // variable will contains phone  our  user
+    int phone_of_user;
+      cout<<"Enter phone number :"
+      cin>>phone_of_user;
+   
+    return phone_of_user;
+
+   } 
+
+};
+
 
 
 /*****door*****/
@@ -292,7 +320,9 @@ int main ()
 {  /* load all labels in this program thanks of "tools.cpp"
        
    */
-
+   
+   system();
+    
     system("chcp1251>nul");
  
   /*OBJECTS*/
@@ -300,25 +330,25 @@ int main ()
   /*****object_door *****/
   main_door_in_flat door_first;
   // door_first is getting two function
-  door_first.name_of_door = "Главная дверь";
+  door_first.name_of_door = "";
   door_first.opening_door();
   door_first. closing_door ();
   /*****light *****/
   //room1
   light_in_rooms room1;
-  room1.name_of_room = "комната1"
+  room1.name_of_room = "room1"
       room1. turning_on_and_turning_off_light();
   //room2
   light_in_rooms room2;
-  room2.name_of_room = "комната2";
+  room2.name_of_room = "room2";
       room2. turning_on_and_turning_off_light();
   //room3
   light_in_rooms room3;
-  room3.name_of_room = "комната3";
+  room3.name_of_room = "room3";
       room3. turning_on_and_turning_off_light();
   //room4
   light_in_rooms room4;
-  room4.name_of_room = "комната4";
+  room4.name_of_room = "room4";
       room4. turning_on_and_turning_off_light();
 
  /*****conditioner *****/ 
@@ -331,7 +361,7 @@ int main ()
 /*****curtains*****/
       main_door_in_flat door_first;
       // door_first is getting two function
-      door_first.name_of_door = "Шторы";
+      door_first.curtains_in_room = "Door";
       door_first. opening_curtians();
       door_first. closing_curtians();
   return 0;
