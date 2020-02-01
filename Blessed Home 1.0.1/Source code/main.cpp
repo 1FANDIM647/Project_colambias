@@ -21,6 +21,9 @@ for creating personal number ID of User .  */
 /*connect main microcontroller*/
 #include <maincontroller.h>
 
+/*connect to bluetooth*/
+#include "bluetooth.cpp"
+
 using namespace std;
 
 
