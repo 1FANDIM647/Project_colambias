@@ -1,0 +1,639 @@
+body{ 
+  border-color: #b3b3b3;
+
+  background-repeat: no-repeat;
+  background-size:cover ;
+
+  zoom : 50%;
+
+}
+
+.sorces{
+ width:100%
+
+ height: 540px;
+ background: black ;
+}
+
+.block_advertisment 
+{
+  height: 400;
+  width: 1200;
+  background-color: white;
+
+}
+
+#hong_advertisment{
+  position: absolute;
+  position: center;
+  right:610px;
+  top: 145%;
+}
+
+#soc{
+	top :95%;
+	right :20%;
+	position: absolute;
+ 
+
+  
+  
+}
+
+#soc4{
+  right: 30%;
+  top :25%;
+  position: absolute;
+  position: center;
+}
+
+#soc1{
+	top :45%;
+
+	right: 15% ;
+	position: absolute;
+position: center;
+	display: 100%;
+
+
+}
+#soc2{
+	top :140%;
+
+	right: 20% ;
+	position: absolute;
+position: center;
+	display: 100%;
+
+
+}
+.button1 {
+	margin: 100px;
+ 
+
+}
+
+.button1 a{
+  text-decoration : none;
+  font-size :40px;
+  font-family: monospace;
+  background-color: red;
+  padding: 20px 30px;
+  color : white;
+  top :10px;
+}
+
+
+.button a{
+	text-decoration : none;
+	font-size :40px;
+	font-family: monospace;
+	background-color: red;
+	padding: 20px 30px;
+	color : white;
+	top :30%;
+  
+}
+#sac{
+	top :31%;
+left :1300px;
+position: absolute;
+position: center;
+	display: 100%;
+
+}
+
+header {
+width:100%;
+display: block;
+height: 490px;
+background: black ;
+position: absolute;
+text-align: center;
+ 
+}
+footer {
+  width: 100%
+  display :100%;
+  height: 200px;
+  background-color: black;
+  font-family: Arial; 
+  
+
+position: relative;
+  text-indent: -9999px;
+}
+
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+/* The component will reset button browser styles */
+
+.r-button{
+  --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+  --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+  --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+  --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
+  --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+  --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+  --uirButtonFontSize: var(--rButtonFontSize,  inherit);
+  --uirButtonColor: var(--rButtonColor);
+
+  background-color: var(--uirButtonBackgroundColor);
+  padding: var(--uirButtonPadding);
+
+  border-width: var(--uirButtonBorderWidth);
+  border-style: var(--uirButtonBorderStyle);
+  border-color: var(--uirButtonBorderColor);
+
+  cursor: pointer;
+
+  font-family: var(--uirButtonFontFamily);
+  font-size: var(--uirButtonFontSize);
+}
+
+.r-button::-moz-focus-inner,
+.r-button[type="button"]::-moz-focus-inner,
+.r-button[type="reset"]::-moz-focus-inner,
+.r-button[type="submit"]::-moz-focus-inner {
+  
+  /* Remove the inner border and padding in Firefox. */
+  
+  border-style: none;
+  padding: 0;
+}
+
+/* The component will reset browser's styles of link */
+
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+    --uirLinkTextColor: var(--rLinkTextColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkTextColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+/* The component will reset browser's styles of list */
+
+.r-list{
+    --uirListPaddingLeft: var(--rListPaddingLeft, 0);
+    --uirListMarginTop: var(--rListMarginTop, 0);
+    --uirListMarginBottom: var(--rListMarginBottom, 0);
+    --uirListListStyle: var(--rListListStyle, none);
+
+    padding-left: var(--uirListPaddingLeft) !important;
+    margin-top: var(--uirListMarginTop) !important;
+    margin-bottom: var(--uirListMarginBottom) !important;
+    list-style: var(--uirListListStyle) !important;
+}
+
+/* Basic styles of the hamburger component */
+
+.m-hamburger{
+  --uiHamburgerDisplay: var(--hamburgerDisplay, inline-flex);
+  --uiHamburgerWidth: var(--hamburgerWidth, 28px);
+  --uiHamburgerHeight: var(--hamburgerHeight, 20px);
+  --uiHamburgerThickness: var(--hamburgerThickness, 4px);
+  --uiHamburgerBorderRadius: var(--hamburgerBorderRadius, 5px);
+  --uiHamburgerBgColor: var(--hamburgerBgColor, currentColor);
+
+  display: var(--uiHamburgerDisplay);
+  width: var(--uiHamburgerWidth);
+  height: var(--uiHamburgerHeight);
+
+  position: relative;
+  text-indent: -9999px;
+}
+
+.m-hamburger::before, 
+.m-hamburger::after, 
+.m-hamburger__label{
+  width: 100%;
+  height: var(--uiHamburgerThickness);
+  border-radius: var(--uiHamburgerBorderRadius);
+  background-color: var(--uiHamburgerBgColor);
+
+  position: absolute;
+  left: 0;
+}
+
+.m-hamburger::before, 
+.m-hamburger::after{
+  content:"";
+}
+
+.m-hamburger::before{
+  top: 0;
+}
+
+.m-hamburger::after{
+  bottom: 0;
+}
+
+.m-hamburger__label{
+  /* The calculation of middle hamburger button line position */
+  
+  top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
+}
+
+/*
+=====
+MENU STYLES
+=====
+*/
+
+.menu{
+  --uiMenuCircleSize: var(--menuCircleSize, 100px);
+  --uiMenuCircleOffset: var(--menuCircleOffset, 10px);
+  --uiMenuCircleBgColor: var(--menuCircleBgColor, currentColor);
+
+  --hamburgerWidth: var(--menuHamburgerWidth, 28px);
+  --hamburgerHeight: var(--menuHamburgerHeight, 20px);
+  --hamburgerBgColor: var(--menuHamburgerBgColor, #fff);
+
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+}
+
+.menu__nav{
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+
+  transition: opacity .2s ease-out;
+  opacity: 0;
+
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.menu__list{
+  width: 100%;
+  max-height: 100%;
+  display: none;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu__toggle{
+  box-sizing: border-box;
+  width: var(--uiMenuCircleSize);
+  height: calc(var(--uiMenuCircleSize) / 2);
+  padding: var(--uiMenuCircleOffset);
+
+  flex: none;
+
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.menu__toggle::before{
+  /*
+  1. The font-size property is used to simplify calculations of the element's sizes and position
+  2. The negative value for the bottom property need for hiding half of circle. 
+  */
+
+  content: "";
+  width: 1em;
+  height: 1em;
+  font-size: var(--uiMenuCircleSize); /* 1 */
+
+  background-color: var(--uiMenuCircleBgColor);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -.5em; /* 2 */
+  left: calc(50% - .5em);
+
+  will-change: width, height;
+  transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+
+.menu__hamburger::before{
+  /* Increase of click button area   */
+
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* styles of hamburger's animation */
+
+.m-hamburger::before, 
+.m-hamburger::after, 
+.m-hamburger__label{
+  transition-timing-function: ease;
+  transition-duration: .15s;  
+}
+
+.m-hamburger::before, 
+.m-hamburger::after{
+  transition-property: transform;
+}
+
+.m-hamburger__label{
+  transition-property: transform, opacity;
+}
+
+/*
+=====
+MENU STATES
+=====
+*/
+
+.menu__hamburger:focus{
+  outline: none;
+}
+
+.menu_activated{
+  height: 100%;
+}
+
+.menu_activated .menu__nav{
+  height: 100%;
+  opacity: 1;
+
+  will-change: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
+}
+
+.menu_activated .menu__toggle::before{
+  width: 100vmax;
+  height: 100vmax;
+  transform: translate3d(-50vh, -50vh, 0) scale(5);
+  transition-duration: 1s;
+}
+
+.menu_activated .menu__list{
+  display: block;
+}
+
+.menu_activated .m-hamburger::before{
+  top: 50%;
+  transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.menu_activated .m-hamburger::after{
+  transform: translate3d(0, -50%, 0) rotate(135deg);
+  top: 50%;
+}
+
+.menu_activated .m-hamburger__label{
+  transform: rotate(-45deg) translate3d(-.285em,-.3em, 0);
+  opacity: 0;
+}
+
+/*
+=====
+SETTINGS
+=====
+*/
+
+:root{
+  --colorWhite: #fff;
+  --colorMain: red;
+  --rLinkTextColor: var(--colorMain);
+  --menuCircleSize: 100px;
+  --menuCircleBgColor: var(--colorMain);
+  --menuHamburgerWidth: 28px;
+  --menuHamburgerHeight: 20px;
+  --menuHamburgerBgColor: var(--colorWhite);
+}
+
+/*
+=====
+DEMO
+=====
+*/
+
+@media (min-width: 768px){
+
+  html{
+    font-size: 62.5%;
+  }
+}
+
+@media (max-width: 767px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  margin: 0;  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 1.6rem;
+}
+
+.page{
+  max-width: 380px;
+  padding: 10px;
+  margin: auto;  
+  text-align: center;
+}
+
+.page__name{
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.page__hint{
+  display: block;
+  line-height: 1.45;
+  margin-top: 1rem;
+}
+
+.menu__group{
+  --rLinkTextColor: var(--colorWhite);
+
+  padding: .5rem 3rem; 
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*
+=====
+LinkedIn
+=====
+*/
+
+.linkedin{
+  width: 100%;
+  background-color: red;
+  text-align: center;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.linkedin__container{
+  max-width: 1000px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.linkedin__text{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.linkedin__link{
+  color: #ff5c5c;
+}
+
+
+// всплывающие окно.
+a{
+    color: white;
+  text-decoration: none;
+  }
+  button{
+    position: absolute;
+    left:12px;
+    top:30%;
+    width: 500px;
+    height: 150px;
+    border-radius: 12px;
+
+  }
+  
+  .popup{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: red;
+    left:20%;
+    top:1%;
+    z-index:6;
+    transition:1s;
+    transform: translateY(-105%);
+  }
+  .hover_body{
+    position: absolute;
+    background:#a0a0a0;
+    width:100vw;
+    height:100vh;
+    z-index:0;
+    opacity: 0;
+  }
+  .header a{
+      position:relative;
+      top :25%;
+   
+        right: 10px;
+  }
+  .header{
+    position: relative;
+    width:100%;
+    text-align: right;
+    top: 25%;
+  }
+  .popup--active{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: red;
+    left:20%;
+    top:1%;
+    z-index: 6;
+    transition: 1s;
+  }
+  .hover_body--active{
+    position: absolute;
+    background:#a0a0a0;
+    width:100vw;
+    height:100vh;
+    z-index:0;
+    opacity: 0.5;
+  }
+  .button--active{
+    opacity: 0.5; 
+  }
+  .coss {
+    top :30%;
+  }
+#foc0{
+  top:40%;
+  right:  ;
+  position: absolute;
+position: center;
+  display: 100%;
+}
+#foc1{
+  top:%;
+  right: 20% ;
+  position: absolute;
+position: center;
+  display: 100%;
+
+}
+
+
+.btn-arrow {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    background: #c00;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+}
+.btn-arrow span {
+    position: relative;
+    z-index: 1;
+}
+.btn-arrow:after, 
+.btn-arrow:before {
+    content:'';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    background: #c00;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.btn-arrow:before {
+    z-index: 1;
+    box-shadow: none;
+}
+.btn-arrow:hover, 
+.btn-arrow:hover:after, 
+.btn-arrow:hover:before {
+    background: #00f;
+}
+ 

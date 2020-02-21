@@ -1,0 +1,9 @@
+.saction1 {
+	position: relative;
+	top:10%;
+}
+.saction2 {
+	position: flex;
+	top:40%;
+	left: 20px;
+}

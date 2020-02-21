@@ -1,8 +1,10 @@
 
 
 body{ 
-  background-color: grey;
-  overflow: scroll;
+  border-color: #b3b3b3;
+  background-repeat: no-repeat;
+ 
+  zoom :50%;
 
 }
 
@@ -19,6 +21,13 @@ body{
   width: 1200;
   background-color: white;
 
+}
+
+#hong_advertisment{
+  position: absolute;
+  position: center;
+  right:610px;
+  top: 145%;
 }
 
 #soc{
@@ -41,7 +50,7 @@ body{
 #soc1{
 	top :45%;
 
-	right: 20% ;
+	right: 15% ;
 	position: absolute;
 position: center;
 	display: 100%;
@@ -74,6 +83,7 @@ position: center;
   top :10px;
 }
 
+
 .button a{
 	text-decoration : none;
 	font-size :40px;
@@ -82,23 +92,17 @@ position: center;
 	padding: 20px 30px;
 	color : white;
 	top :30%;
+  
 }
 #sac{
 	top :31%;
-left :1280px;
+left :1300px;
 position: absolute;
 position: center;
 	display: 100%;
 
 }
-#aaa{
-  top:145%;
-  left :1280px;
-  position: absolute;
-  position: center;
-  display: 100%;
 
-}
 header {
 width:100%;
 display: block;
@@ -521,6 +525,7 @@ a{
     top:30%;
     width: 500px;
     height: 150px;
+    border-radius: 12px;
 
   }
   
@@ -593,5 +598,42 @@ position: center;
 position: center;
   display: 100%;
 
+}
+
+
+.btn-arrow {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    background: #c00;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+}
+.btn-arrow span {
+    position: relative;
+    z-index: 1;
+}
+.btn-arrow:after, 
+.btn-arrow:before {
+    content:'';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    background: #c00;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.75);
+    z-index: -1;
+    transform: rotate(45deg);
+}
+.btn-arrow:before {
+    z-index: 1;
+    box-shadow: none;
+}
+.btn-arrow:hover, 
+.btn-arrow:hover:after, 
+.btn-arrow:hover:before {
+    background: #00f;
 }
 
